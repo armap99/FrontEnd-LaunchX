@@ -176,3 +176,35 @@ li {
 }
 
 /*Chef*/
+
+.table{
+  table-layout: fixed;
+  width: 80%;
+  border-collapse: collapse;
+  border: 2px solid #58355E;
+  margin-left: 10%;
+  text-align: left;
+  border-collapse: collapse;
+  caption-side: top;
+  margin-top: 1em;
+  color: #67697C;
+  background-color: #F8F8FF;
+}
+
+caption, td, th {
+  padding: 0.3em;
+}
+th, td {
+  border-bottom: 1px solid #67697C;
+  border-right: 1px solid #67697C;
+}
+th.last, td.last {
+  border-right: 0;
+}
+tfoot th, tfoot td {
+  border-bottom: 0;
+  text-align: center;
+}
+th {
+  width: 25%;
+}
