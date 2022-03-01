@@ -4,107 +4,158 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MoonCake | Cliente</title>
+    <link href="./styles/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <img src="./src/img/MoonCakeLogo.png" alt="Logo MoonCake" />
-    <!-- Listas -->
-    <p>Sabores</p>
-    <ul>
-      <li>Chocolate ------------ $150</li>
-      <li>Vainilla --------------- $100</li>
-      <li>Fresa ------------------ $130</li>
-      <li>Café ------------------- $180</li>
-    </ul>
-    <p>Decoraciones de otro mundo</p>
-    <ul>
-      <li>Estrellas de Chocolate --- $10</li>
-      <li>Vacas astronautas --- $25</li>
-      <li>Cohetes --- $25</li>
-      <li>Asteroides de nuez -- $30</li>
-    </ul>
+    <div class="general-index-cotainer">
+      <!--Logo-->
+      <div class="logo-imag-general-container">
+        <div class="logo-imag-container">
+          <img
+            src="./src/img/MoonCakeLogo.png"
+            alt="Logo MoonCake"
+            class="logo-img"
+          />
+        </div>
+      </div>
+      <!-- Listas -->
+      <div class="cliente-container">
+        <div class="menu-container">
+          <p class="menu-title">Sabores</p>
+          <ul>
+            <li class="menu-text">Chocolate ------------ $150</li>
+            <li class="menu-text">Vainilla --------------- $100</li>
+            <li class="menu-text">Fresa ------------------ $130</li>
+            <li class="menu-text">Café ------------------- $180</li>
+          </ul>
+          <p class="menu-title">Decoraciones de otro mundo</p>
+          <ul>
+            <li class="menu-text">Estrellas de Chocolate --- $10</li>
+            <li class="menu-text">Vacas astronautas --- $25</li>
+            <li class="menu-text">Cohetes --- $25</li>
+            <li class="menu-text">Asteroides de nuez -- $30</li>
+          </ul>
+        </div>
 
-    <form action="">
-      <div>
-        <input
-          type="text"
-          name="nombreCliente"
-          id="nombreCliente"
-          placeholder="Nombre Completo"
-        />
-        <br />
-        <input
-          type="tel"
-          name="telefonoCliente"
-          id="telefonoCliente"
-          placeholder="Telefono"
-        />
-        <br />
-        <input
-          type="email"
-          name="emailCliente"
-          id="emailCliente"
-          placeholder="example@gmail.com"
-        />
-        <br />
-        <input
-          type="text"
-          name="descripcionPastel"
-          id="descripcionPastel"
-          placeholder="Describa detalladamente su pastel"
-        />
+        <div class="form-client-container">
+          <form action="">
+            <div>
+              <input
+                class="input"
+                type="text"
+                name="nombreCliente"
+                id="nombreCliente"
+                placeholder="Nombre Completo"
+              />
+              <input
+                class="input"
+                type="tel"
+                name="telefonoCliente"
+                id="telefonoCliente"
+                placeholder="Telefono"
+              />
+              <input
+                class="input"
+                type="email"
+                name="emailCliente"
+                id="emailCliente"
+                placeholder="example@gmail.com"
+              />
+              <input
+                class="input"
+                type="text"
+                name="descripcionPastel"
+                id="descripcionPastel"
+                placeholder="Describa detalladamente su pastel"
+              />
+            </div>
+            <p class="sub-title-form">Sabores</p>
+            <div class="multiple-select">
+              <div>
+                <label for="saborChocolate">Chocolate</label>
+                <input
+                  class="option-check"
+                  type="checkbox"
+                  name="saborChocolate"
+                  id="saborChocolate"
+                />
+              </div>
+              <div>
+                <label for="saborVainilla">Vainilla</label>
+                <input
+                  class="option-check"
+                  type="checkbox"
+                  name="saborVainilla"
+                  id="saborVainilla"
+                />
+              </div>
+              <div>
+                <label for="saborFresa">Fresa</label>
+                <input
+                  class="option-check"
+                  type="checkbox"
+                  name="saborFresa"
+                  id="saborFresa"
+                />
+              </div>
+              <div>
+                <label for="saborCafé">Café</label>
+                <input
+                  class="option-check"
+                  type="checkbox"
+                  name="saborCafé"
+                  id="saborCafé"
+                />
+              </div>
+            </div>
+            <p class="sub-title-form">Decoraciones</p>
+            <div class="multiple-select">
+              <div>
+                <label for="EstrellasdeChocolate">Estrellas</label>
+                <input
+                  class="option-check"
+                  type="checkbox"
+                  name="EstrellasdeChocolate"
+                  id="EstrellasdeChocolate"
+                />
+              </div>
+              <div>
+                <label for="VacasAstronautas">Vacas</label>
+                <input
+                  class="option-check"
+                  type="checkbox"
+                  name="VacasAstronautas"
+                  id="VacasAstronautas"
+                />
+              </div>
+              <div>
+                <label for="Cohetes">Cohetes</label>
+                <input
+                  class="option-check"
+                  type="checkbox"
+                  name="Cohetes"
+                  id="Cohetes"
+                />
+              </div>
+              <div>
+                <label for="Asteroides">Asteroides</label>
+                <input
+                  class="option-check"
+                  type="checkbox"
+                  name="Asteroides"
+                  id="Asteroides"
+                />
+              </div>
+            </div>
+            <button class="button-form" type="submit">Hacer pedido</button>
+          </form>
+        </div>
       </div>
-      <p>Sabores</p>
-      <div>
-        <div>
-          <label for="saborChocolate">Chocolate</label>
-          <input type="checkbox" name="saborChocolate" id="saborChocolate" />
-        </div>
-        <div>
-          <label for="saborVainilla">Vainilla</label>
-          <input type="checkbox" name="saborVainilla" id="saborVainilla" />
-        </div>
-        <div>
-          <label for="saborFresa">Fresa</label>
-          <input type="checkbox" name="saborFresa" id="saborFresa" />
-        </div>
-        <div>
-          <label for="saborCafé">Café</label>
-          <input type="checkbox" name="saborCafé" id="saborCafé" />
-        </div>
-      </div>
-      <p>Decoraciones</p>
-      <div>
-        <div>
-          <label for="EstrellasdeChocolate">Estrellas</label>
-          <input
-            type="checkbox"
-            name="EstrellasdeChocolate"
-            id="EstrellasdeChocolate"
-          />
-        </div>
-        <div>
-          <label for="VacasAstronautas">Vacas</label>
-          <input
-            type="checkbox"
-            name="VacasAstronautas"
-            id="VacasAstronautas"
-          />
-        </div>
-        <div>
-          <label for="Cohetes">Cohetes</label>
-          <input type="checkbox" name="Cohetes" id="Cohetes" />
-        </div>
-        <div>
-          <label for="Asteroides">Asteroides</label>
-          <input type="checkbox" name="Asteroides" id="Asteroides" />
-        </div>
-      </div>
-      <button type="submit">Hacer pedido</button>
-    </form>
-    <footer>
-      <p>Calle Vía Lactea #27</p>
-      <a href="tel:+5578787878">Telefono</a>
-      <p>Hoario de atencón: 7am - 6pm</p>
+    </div>
+    <footer class="footer">
+      <p class="footer-text">Calle Vía Lactea #27</p>
+      <a href="tel:+5578787878" class="footer-text">Telefono</a>
+      <p class="footer-text">Hoario de atencón: 7am - 6pm</p>
     </footer>
   </body>
 </html>
